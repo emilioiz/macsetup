@@ -13,7 +13,7 @@ xcode-select —-install
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 #M1 chip use
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # install the executables with homebrew
  
@@ -27,27 +27,19 @@ brew install git
 
 brew install --cask postman
 
-brew install --cask google-chrome
-
-brew install --cask slack
-
-brew install --cask iterm2
-
-brew install --cask adobe-creative-cloud
-
-brew install --cask krisp
-
-brew install --cask zoom
-
 # nvm
  
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | zsh
  
-nvm install 12
+nvm install 14
+
+nvm install 16
  
-nvm use 12
+nvm use 16
 
 npm i -g create-react-app nodemon prettier yarn
+
+#zsh
  
 zsh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
  
@@ -57,8 +49,8 @@ upgrade_oh_my_zsh
 # gcloud init to config
 
 brew install --cask google-cloud-sdk
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 
 brew install firebase-cli
 
