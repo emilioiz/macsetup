@@ -49,8 +49,17 @@ cmd + shift + p
 type shell
 install shell in path
 
-#tools
-visual studio code
+#vs code extensions
+ES7+ React/Redux/React-Native Snippets
+Firebase
+GitLens
+Material Icon Theme
+One Dark Pro
+Prettier
+Tabnine AI
+Thunder Client
+
+#addtional tools
 postman
 slack
 iterm 2
