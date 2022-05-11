@@ -63,3 +63,5 @@ Thunder Client
 postman
 slack
 iterm 2
+magnet
+krisp
