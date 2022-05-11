@@ -1,63 +1,56 @@
 # config
  
-# add progress bar when curl-ing
- 
-echo progress-bar >> ~/.curlrc
-
-# Install xcode
+#xcode
  
 xcode-select —-install
-
-# install homebrew
- 
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-#M1 chip use
-#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
-# install the executables with homebrew
- 
-brew update
- 
-brew tap homebrew/cask
- 
-brew install --cask visual-studio-code
- 
-brew install git
-
-brew install --cask postman
-
-# nvm
- 
-brew install nvm
-
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
- 
-nvm install 14
-
-nvm install 16
- 
-nvm use 16
-
-npm i -g create-react-app nodemon prettier yarn
 
 #zsh
  
 zsh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
- 
-upgrade_oh_my_zsh
+omz update
 
-# gcp
-# gcloud init to config
+#nvm
 
-brew install --cask google-cloud-sdk
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
+restart terminal
+nvm install 16
+nvm use 16
+node -v
 
-brew install firebase-cli
+#gcloud
 
-brew install --cask firebase-admin
+curl https://sdk.cloud.google.com | zsh
+restart terminal
+gcloud init
 
-brew install --cask oracle-jdk
+#firebase
+
+npm install -g firebase-tools
+firebase login
+firebase projects:list
+
+#git ssh
+
+ssh-keygen -t ed25519 -C "your_email@example.com"
+cd ssh directory
+vi id_ed25519.pub
+
+#java
+
+https://www.oracle.com/java/
+x64 DMG Installer
+download and install java
+
+#vs code
+
+download and install vs code
+open vs code
+cmd + shift + p
+type shell
+install shell in path
+
+#tools
+visual studio code
+postman
+slack
+iterm 2
