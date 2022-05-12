@@ -67,3 +67,10 @@ slack
 iterm 2
 magnet
 krisp
+
+#vscode format on save
+CTRL + SHIFT + P
+Format Document (in pop-up bar)
+Select Format Document
+Select Configure Default Formatter... 
+Select Prettier - Code formatter
